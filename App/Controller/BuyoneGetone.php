@@ -49,7 +49,7 @@ class BuyoneGetone
     {
         if (isset($cart_item['free_price']) && isset($cart_item_key)) {
             $product_quantity = '';
-            $product_quantity = '<label >' . esc_html($cart_item['quantity']) . '</label>';
+            $product_quantity .= '<label >' . esc_html($cart_item['quantity']) . '</label>';
         }
 
         return $product_quantity;
